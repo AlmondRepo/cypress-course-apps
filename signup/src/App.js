@@ -23,19 +23,22 @@ export default function SignupPage() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Enter your email"
-          className="w-full border p-3 rounded-md mb-3 focus:ring-2 focus:ring-blue-400"
+          className="w-full border p-3 rounded-md mb-3 focus:ring-2 focus:ring-blue-400 enter-email"
+          id="enter-email"
         />
         <input
           type="password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           placeholder="Enter your password"
-          className="w-full border p-3 rounded-md mb-3 focus:ring-2 focus:ring-blue-400"
+          className="w-full border p-3 rounded-md mb-3 focus:ring-2 focus:ring-blue-400 enter-password"
+          id="enter-password"
         />
         <select
           value={userType}
           onChange={(e) => setUserType(e.target.value)}
-          className="w-full border p-3 rounded-md mb-3 focus:ring-2 focus:ring-blue-400"
+          className="w-full border p-3 rounded-md mb-3 focus:ring-2 focus:ring-blue-400 select-user"
+          id="select-user"
         >
           <option value="user">User</option>
           <option value="admin">Admin</option>
@@ -45,13 +48,15 @@ export default function SignupPage() {
             type="checkbox"
             checked={termsAccepted}
             onChange={(e) => setTermsAccepted(e.target.checked)}
-            className="w-5 h-5 accent-blue-500"
+            className="w-5 h-5 accent-blue-500 accept"
+            id="accept"
           />
           <span className="text-gray-700">Accept Terms and Conditions</span>
         </div>
         <button
           onClick={handleSignup}
-          className="w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition"
+          className="w-full bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition submit-form"
+          id="submit-form"
         >
           Signup
         </button>
