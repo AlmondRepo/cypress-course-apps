@@ -62,28 +62,28 @@ export default function Dashboard() {
           <button
             id="profile-btn"
             onClick={() => navigate("/profile")}
-            className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition"
+            className="bg-blue-500 text-white p-3 rounded-md hover:bg-blue-600 transition profile-btn"
           >
             View Profile
           </button>
           <button
             id="settings-btn"
             onClick={() => navigate("/settings")}
-            className="bg-green-500 text-white p-3 rounded-md hover:bg-green-600 transition"
+            className="bg-green-500 text-white p-3 rounded-md hover:bg-green-600 transition settings-btn"
           >
             Settings
           </button>
           <button
             id="help-btn"
             onClick={() => navigate("/help")}
-            className="bg-yellow-500 text-white p-3 rounded-md hover:bg-yellow-600 transition"
+            className="bg-yellow-500 text-white p-3 rounded-md hover:bg-yellow-600 transition help-btn"
           >
             Help
           </button>
           <button
             id="reports-btn"
             onClick={() => navigate("/reports")}
-            className="bg-purple-500 text-white p-3 rounded-md hover:bg-purple-600 transition"
+            className="bg-purple-500 text-white p-3 rounded-md hover:bg-purple-600 transition reports-btn"
           >
             Reports
           </button>
@@ -93,7 +93,7 @@ export default function Dashboard() {
         <button
           onClick={handleLogout}
           id="logout-btn"
-          className="w-full bg-red-500 text-white p-3 rounded-md hover:bg-red-600 transition"
+          className="w-full bg-red-500 text-white p-3 rounded-md hover:bg-red-600 transition logout-btn"
         >
           Logout
         </button>
