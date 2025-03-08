@@ -58,7 +58,9 @@ export default function Dashboard() {
         </div>
 
         {/* Quick Actions */}
-        <div className="grid grid-cols-2 gap-3 mb-4">
+        <div className="grid grid-cols-2 gap-3 mb-4 menu-container"
+          id="menu-container"
+        >
           <button
             id="profile-btn"
             onClick={() => navigate("/profile")}

@@ -20,7 +20,7 @@ export default function SignupPage() {
   return (
     <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-blue-400 to-purple-500 p-6">
       <div className="bg-white shadow-lg rounded-lg p-6 w-full max-w-md">
-        <h1 className="text-3xl font-bold text-center text-gray-700 mb-6">Sign Up</h1>
+        <h1 className="text-3xl font-bold text-center text-gray-700 mb-6 homepage-title">Sign Up</h1>
         <input
           type="email"
           value={email}
@@ -43,12 +43,13 @@ export default function SignupPage() {
           <option value="user">User</option>
           <option value="admin">Admin</option>
         </select>
-        <div className="flex items-center gap-2 mb-4">
+        <div className="flex items-center gap-2 mb-4 accept-check">
           <input
             type="checkbox"
             checked={termsAccepted}
             onChange={(e) => setTermsAccepted(e.target.checked)}
-            className="w-5 h-5 accent-blue-500"
+            className="w-5 h-5 accent-blue-500 check-me"
+            id="check-me"
           />
           <span className="text-gray-700">Accept Terms and Conditions</span>
         </div>
